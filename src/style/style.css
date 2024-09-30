@@ -1,0 +1,319 @@
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  -ms-overflow-style: none;
+  scrollbar-width: none
+}
+
+header {
+  background-color: #ffffff;
+}
+
+.navcont {
+  position: absolute;
+  width: 1920px;
+  height: 60px;
+  background-color: rgb(29, 29, 29);
+  z-index: 1;
+}
+
+.imgcont-one {
+  position: absolute;
+  top: 0px;
+  height: 80px;
+  width: 80px;
+}
+
+body {
+  background-color: rgb(29, 29, 29);
+  margin: 0 auto;
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.slider {
+  width: 1920px;
+  height: 995px;
+}
+
+.middle {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.navigation {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+/* 
+_________HABMURGER MENU__________ */
+
+/* скрываем чекбокс */
+#menu__toggle {
+  opacity: 0;
+}
+
+/* стилизуем кнопку */
+.menu__btn {
+  display: flex;
+  /* используем flex для центрирования содержимого */
+  align-items: center;
+  /* центрируем содержимое кнопки */
+  position: relative;
+  top: 0px;
+  left: 1870px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+/* добавляем "гамбургер" */
+.menu__btn>span,
+.menu__btn>span::before,
+.menu__btn>span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+}
+
+.menu__btn>span::before {
+  content: '';
+  top: -8px;
+}
+
+.menu__btn>span::after {
+  content: '';
+  top: 8px;
+}
+
+/* контейнер меню */
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: 100%;
+  width: 600px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  margin-left: 1320px;
+  list-style: none;
+  text-align: center;
+  background-image: url(/src/img/Скриншот\ 10-04-2024\ 200801.jpg);
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+}
+
+/* элементы меню */
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #838383;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+
+#menu__toggle:checked~.menu__btn>span {
+  transform: rotate(45deg);
+}
+
+#menu__toggle:checked~.menu__btn>span::before {
+  top: 0;
+  transform: rotate(0);
+}
+
+#menu__toggle:checked~.menu__btn>span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+#menu__toggle:checked~.menu__box {
+  visibility: visible;
+  left: 0;
+}
+
+.menu__btn>span,
+.menu__btn>span::before,
+.menu__btn>span::after {
+  transition-duration: .25s;
+}
+
+.menu__box {
+  transition-duration: .25s;
+}
+
+.menu__item {
+  transition-duration: .25s;
+}
+
+
+/*_________________________ */
+
+.bar {
+  width: 30px;
+  height: 8px;
+  margin: 6px;
+  cursor: pointer;
+  background-color: #000;
+  opacity: .5;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+}
+
+.bar:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+input[name="r"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.slides {
+  width: 400%;
+  height: 100%;
+  display: flex;
+}
+
+.slide {
+  width: 25%;
+  transition: all 0.6s ease;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+}
+
+#r1:checked~.s1 {
+  margin-left: 0;
+}
+
+#r2:checked~.s1 {
+  margin-left: -25%;
+}
+
+#r3:checked~.s1 {
+  margin-left: -50%;
+}
+
+#r4:checked~.s1 {
+  margin-left: -75%;
+}
+
+p {
+  position: absolute;
+  color: #ffffff;
+  font-size: 14px;
+  top: 1200px;
+  padding-left: 10px;
+  z-index: 3;
+  font-family: "Geologica", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+.p-one {
+  position: relative;
+  top: 1100px;
+  font-size: 31px;
+}
+
+.p-two {
+  position: relative;
+  top: 1100px;
+  font-size: 50px;
+  left: 500px;
+  top: 1120px;
+}
+
+.p-three
+{
+  position: relative;
+  top: 1100px;
+  font-size: 50px;
+  left: 700px;
+  top: 1320px;
+}
+
+.p-four
+{
+  position: relative;
+  top: 1100px;
+  font-size: 50px;
+  left: 700px;
+  top: 1520px;
+}
+
+
+.divcont {
+  position: absolute;
+  background-color: rgb(29, 29, 29);
+  top: 1035px;
+  height: 10000px;
+  width: 1920px;
+  z-index: 2;
+}
+
+
+.imgsection-one {
+  display: inline-block;
+  position: relative;
+  height: 950px;
+  width: 475px;
+  top: 1130px;
+  left: 50px;
+  z-index: 100;
+}
+
+.imgsection-two {
+  display: inline-block;
+  position: relative;
+  height: 300px;
+  width: 500px;
+  top: 1230px;
+  left: 200px;
+  z-index: 200;
+}
+
+.imgsection-three {
+  display: inline-block;
+  position: relative;
+  height: 1000px;
+  width: 1920px;
+  top: 1430px;
+  z-index: 200;
+}
+
+

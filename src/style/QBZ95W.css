@@ -1,0 +1,430 @@
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  -ms-overflow-style: none;
+  scrollbar-width: none
+}
+
+.wrapper {
+  width: 1400px;
+  margin: auto;
+}
+
+
+.navcont {
+  height: 60px;
+  background-color: rgb(29, 29, 29);
+  z-index: 100;
+}
+
+.imgwiki-one {
+  position: absolute;
+  top: 0px;
+  height: 80px;
+  width: 80px;
+}
+
+header {
+  height: 60px;
+  background-color: rgb(29, 29, 29);
+  z-index: 100;
+}
+
+
+.pwiki {
+  color: #ffffff;
+  z-index: 3;
+  position: relative;
+  left: 100px;
+  top: -30px;
+  margin: auto;
+  font-size: 30px;
+  font-family: "Geologica", sans-serif;
+  font-style: normal;
+}
+
+.pwiki-two {
+  display: flex;
+  color: #ffffff;
+  font-size: 30px;
+  font-family: "Geologica", sans-serif;
+  text-decoration: none
+}
+
+.pwiki-section {
+  color: #ffffff;
+  z-index: 3;
+  position: relative;
+  font-family: "Geologica", sans-serif;
+  margin: auto;
+  top: 20px;
+  left: 20px;
+}
+
+.pwiki-section-64 {
+  color: #ffffff;
+  z-index: 3;
+  position: relative;
+  font-family: "Geologica", sans-serif;
+  margin: auto;
+  top: 10px;
+  left: 50px;
+}
+
+.pwiki-section-contents {
+  color: #ffffff;
+  z-index: 3;
+  position: relative;
+  right: 15px;
+  font-family: "Geologica", sans-serif;
+  top: 20px;
+  font-size: 14px;
+  margin: auto;
+}
+
+.pwiki-section-one {
+  color: #ffffff;
+  z-index: 3;
+  position: relative;
+  left: 20px;
+  top: 30px;
+  margin: auto;
+  font-size: 50px;
+  font-family: "Geologica", sans-serif;
+  font-style: normal;
+}
+
+main {
+  z-index: 10;
+}
+
+body {
+  margin: auto;
+
+  background: url(/src/img/Deadline_man_gaming_GFX_by_Nerdy.webp) no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+}
+
+.mainsection {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+
+.hamburger-menu {
+
+
+  #menu__toggle {
+    opacity: 0;
+  }
+
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -5px;
+    left: 1350px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 101;
+  }
+
+  .menu__btn>span,
+  .menu__btn>span::before,
+  .menu__btn>span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+  }
+
+  .menu__btn>span::before {
+    content: '';
+    top: -8px;
+  }
+
+  .menu__btn>span::after {
+    content: '';
+    top: 8px;
+  }
+
+  .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: 100%;
+    width: 270px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    margin-left: 1650px;
+    list-style: none;
+    text-align: center;
+    background-image: url(/src/img/Скриншот\ 10-04-2024\ 200801.jpg);
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  }
+
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #838383;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .menu__item:hover {
+    background-color: #CFD8DC;
+  }
+
+  #menu__toggle:checked~.menu__btn>span {
+    transform: rotate(45deg);
+  }
+
+  #menu__toggle:checked~.menu__btn>span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+
+  #menu__toggle:checked~.menu__btn>span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+
+  #menu__toggle:checked~.menu__box {
+    visibility: visible;
+    left: 0;
+  }
+
+  .menu__btn>span,
+  .menu__btn>span::before,
+  .menu__btn>span::after {
+    transition-duration: .25s;
+  }
+
+  .menu__box {
+    transition-duration: .25s;
+  }
+
+  .menu__item {
+    transition-duration: .25s;
+  }
+}
+
+.divcont {
+  background-color: rgb(29, 29, 29);
+  height: 10000px;
+  z-index: 2;
+}
+
+
+.section-cont {
+  display: inline-block;
+  position: relative;
+  border: 1px solid #ffffff;
+  left: 20px;
+  top: 90px;
+  width: 180px;
+  height: 280px;
+}
+
+.section-ul {
+  display: block;
+  position: relative;
+  border: none;
+  border-top: 1px solid #ffffff;
+  width: 140px;
+  height: 220px;
+  bottom: 150px;
+  left: 20px;
+  color: #ffffff;
+}
+
+
+.side-info {
+  display: inline-block;
+  position: relative;
+  border: 1px solid #7b7b7b;
+  background-color: #161616;
+  left: 900px;
+  top: -490px;
+  width: 400px;
+  height: 1530px;
+
+  .name-side-info {
+    background-color: #2c2c2c;
+    position: relative;
+    height: 50px;
+  }
+
+  .pwiki-side-info {
+    color: #ffffff;
+    z-index: 3;
+    position: relative;
+    font-family: "Geologica", sans-serif;
+    font-size: 25px;
+    margin: auto;
+    top: 10px;
+    left: 100px;
+  }
+
+  .img-side-info {
+    background: url(/src/img/Weapons/QBZ-95.jpg);
+    background-size: cover;
+    position: relative;
+    height: 200px;
+  }
+
+  .type-side-info {
+    position: relative;
+    border: none;
+    border-bottom: 1px solid #7b7b7b;
+    height: 60px;
+
+    .ptype-side-info {
+      color: #ffffff;
+      z-index: 3;
+      display: inline-block;
+      position: relative;
+      font-family: "Geologica", sans-serif;
+      top: 30px;
+      left: 10px;
+      margin: auto;
+    }
+
+    .ptype-side-info-one {
+      color: #ffffff;
+      z-index: 3;
+      display: inline-block;
+      position: relative;
+      font-family: "Geologica", sans-serif;
+      font-size: 14px;
+      top: 30px;
+      left: 80px;
+      margin: auto;
+    }
+
+    .Free {
+      color: #00ff22;
+      z-index: 3;
+      display: inline-block;
+      position: relative;
+      font-family: "Geologica", sans-serif;
+      font-size: 14px;
+      top: 30px;
+      left: 100px;
+      margin: auto;
+    }
+  }
+
+  .pwiki-side-info-stats {
+    color: #ffffff;
+    z-index: 3;
+    position: relative;
+    font-family: "Geologica", sans-serif;
+    font-size: 25px;
+    margin: auto;
+    top: 10px;
+    left: 90px;
+  }
+}
+
+.divcont-section-twi-description {
+  position: relative;
+  left: 20px;
+  bottom: 1700px;
+  height: 50px;
+  width: 850px;
+  border: none;
+  border-bottom: 1px solid #7b7b7b;
+}
+
+.divcont-section-twi-description-secondary {
+  position: relative;
+  left: 20px;
+  bottom: 1700px;
+  width: 850px;
+
+  .pwiki-section-description {
+    color: #ffffff;
+    z-index: 3;
+    position: relative;
+    font-family: "Geologica", sans-serif;
+    margin: auto;
+    padding-top: 20px;
+    top: 20px;
+    left: 20px;
+  }
+
+  .pwiki-section-description-medium {
+    color: #ffffff;
+    z-index: 3;
+    position: relative;
+    font-family: "Geologica", sans-serif;
+    font-size: 25px;
+    margin: auto;
+    padding-top: 20px;
+    top: 10px;
+    left: 20px;
+  }
+}
+
+.tabs {
+  display: flex;
+  position: relative;
+  top: 50px;
+  flex-wrap: wrap;
+  width: 900px;
+  height: 100pxs;
+  font-family: sans-serif;
+}
+
+.tabs__label {
+  padding: 10px 16px;
+  cursor: pointer;
+  color: #414141;
+  font-family: "Geologica", sans-serif;
+  border-bottom: 1px solid #414141;
+}
+
+.tabs__radio {
+  display: none;
+}
+
+.tabs__content {
+  order: 1;
+  width: 100%;
+  line-height: 1.5;
+  display: none;
+  font-family: "Geologica", sans-serif;
+}
+
+.tabs__radio:checked+.tabs__label {
+  font-weight: bold;
+  color: #aeaeae;
+  border-bottom: 1px solid #aeaeae;
+  font-family: "Geologica", sans-serif;
+}
+
+.tabs__radio:checked+.tabs__label+.tabs__content {
+  display: initial;
+  color: #ffffff;
+}
+
+
+
+
