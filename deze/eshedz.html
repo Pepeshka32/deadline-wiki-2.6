@@ -8,17 +8,41 @@
 </head>
 
 <body>
-    <p id="contacts"></p>
-    <div id="mydiv"></div>
+    <div id="gyatt"></div>
 
     <script>
-        let cont = document.getElementById("contacts");
-        cont.innerText = "E-mail: zalupapokpenisok@gmail.com\n\n\n\n\n\n\n\n\n\n\n";
-        cont.style.color = "red";
-        cont.style.backgroundColor = "yellow";
-        cont.style.width = "420px";
-        cont.style.height = "228px";
+        let div1 = document.createElement("div");
+        div1.style.width = "420px";
+        div1.style.height = "42px";
+        div1.style.backgroundColor = "lightblue";
+        div1.style.border = "2px solid black";
+        div1.innerText = "что за gyatt в id дива";
+        document.getElementById("gyatt").appendChild(div1);
 
+        let div2 = document.createElement("div");
+        div2.style.width = "420px";
+        div2.style.height = "42px";
+        div2.style.backgroundColor = "lightblue";
+        div2.style.border = "2px solid black";
+        div2.innerText = "зачем я его использую?";
+        document.getElementById("gyatt").appendChild(div2);
+
+        let div3 = document.createElement("div");
+        div3.style.width = "420px";
+        div3.style.height = "120px";
+        div3.style.backgroundColor = "lightgrey";
+        div3.style.border = "2px solid black";
+        div3.innerText = "ну а поему бы и нет? пока что начало пользуем что хочем хоть даже называем айди писями какахами потому что я так дмаю что обычный пользователь не будет лезть в код страницы и смотреть на вои дивы.Если в будущем увидите писи какашки в названиях дива, тогда знайте тчо я устроился на работу";
+        document.getElementById("gyatt").appendChild(div3);
+
+        
+        let div4 = document.createElement("div");
+        div4.style.width = "420px";
+        div4.style.height = "42px";
+        div4.style.backgroundColor = "lightblue";
+        div4.style.border = "2px solid black";
+        div4.innerText = "всьо всем пака";
+        document.getElementById("gyatt").appendChild(div4);
 
     </script>
 </body>
